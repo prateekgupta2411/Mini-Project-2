@@ -29,16 +29,16 @@
             </div>
             <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input class="input-field" type="password" placeholder="Enter password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log in</button>
+                <button type="submit" class="submit-btn" onclick="myfunction1()" >login</button>
             </form>
             <form id="register" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
                 <input type="checkbox" class="check-box"><span>I agree to the term & conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn" onclick="myfunction()" >Register</button>
             </form>
         </div>
     </div>
@@ -59,6 +59,14 @@
             z.style.left = "0";
         }
 
+        function myfunction1(){
+            window.location.href='./index.html'
+            alert("welcome to Apni dukan 24x7")
+         
+      }
+      function myfunction(){
+          alert("user registered")
+      }
     </script>
 </body>
 
